@@ -48,7 +48,7 @@ const CopyLink = (e) => {
     const el = e.target;
     const link = el.parentElement.querySelector("#link_shortened").textContent
     navigator.clipboard.writeText(link);
-    extContent = "copied!"
+    el.textContent = "copied!"
     el.style.backgroundColor = "hsl(257, 27%, 26%)"
 
 }
