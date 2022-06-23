@@ -228,31 +228,7 @@
   }
   .hero .container img {
     position: absolute;
-    right: -150px;
-    width: 120%;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .hero .container {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .hero .container .text {
-    text-align: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 30px;
-    margin: 90% auto;
-    margin-bottom: 88px;
-  }
-  .hero .container .text h1 {
-    font-size: 40px;
-  }
-  .hero .container img {
-    position: absolute;
-    right: -150px;
+    right: -130px;
     width: 120%;
   }
 }

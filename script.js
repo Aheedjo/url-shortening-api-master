@@ -3,7 +3,6 @@ const shortenedLinks_div = document.querySelector(".shortened_links .container")
 const form = document.querySelector("form");
 const errorMessage_span = document.querySelector(".error_message");
 const input = document.getElementById("input");
-// const copy_btn = document.getElementById("copy");
 const links = JSON.parse(localStorage.getItem('links')) || [];
 
 const showMenu = () => {
@@ -21,7 +20,7 @@ const addLink = (e) => {
     links.push(link_entered)
     populateLinks(links, shortenedLinks_div)
     localStorage.setItem('links', JSON.stringify(links));
-    // this.reset();
+    input.value = "";
 }
 
 const populateLinks = (links = [], linksList) => {
@@ -49,18 +48,9 @@ const CopyLink = (e) => {
     const el = e.target;
     const link = el.parentElement.querySelector("#link_shortened").textContent
     navigator.clipboard.writeText(link);
+    extContent = "copied!"
+    el.style.backgroundColor = "hsl(257, 27%, 26%)"
 
-    // let start = Date.now();
-    // let end = start + 3000;
-
-    // const change = () => {
-    //     start = Date.now();
-    //     console.log(start, end)
-    //     el.textContent = "copied!"
-    //     if (start > end) clearInterval(timer)
-    // }
-    // el.textContent = "copy"
-    // let timer = setInterval(change, 100)
 }
 
 form.addEventListener("submit", addLink)
