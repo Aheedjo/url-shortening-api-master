@@ -1,0 +1,65 @@
+@import "../variables/vaariables.scss";
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    .text {
+        @include flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        margin: 135px 0;
+        h1 {
+            font-size: 75px;
+        }
+        .btn {
+            width: 200px;
+            height: 56px;
+            font-size: 1.2em;
+        }
+    }
+    img {
+        position: absolute;
+        right: -250px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero .container {
+        grid-template-columns: 1fr;
+        .text {
+            text-align: center;
+            align-items: center;
+            gap: 30px;
+            margin: 90% auto;
+            margin-bottom: 88px;
+            h1 {
+                font-size: 40px;
+            }
+        }
+        img {
+            position: absolute;
+            right: -150px;
+            width: 120%
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .hero .container {
+        .text {
+            margin: 100% auto;
+            margin-bottom: 88px;
+        }
+        img {
+            right: -150px;
+            width: 130%
+        }
+    }
+}

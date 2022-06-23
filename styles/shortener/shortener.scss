@@ -1,0 +1,72 @@
+@import "../variables/vaariables.scss";
+$placeholder: hsl(257, 7%, 63%);
+.shortener {
+    margin-top: 70px;
+    background: linear-gradient(#fff 50%, #F0F1F6 50%);
+    .container {
+        background-color: $Very_Dark_Violet;
+        padding: 52px 65px;
+        border-radius: 10px;
+        background-image: url("../images/bg-shorten-desktop.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        form {
+            display: grid;
+            grid-template-columns: 80% 20%;
+            gap: 25px;
+            >span {
+                position: relative;
+                input {
+                    padding: 24px 33px;
+                    border-radius: 10px;
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                }
+                 ::placeholder {
+                    color: $placeholder;
+                }
+                .error_message {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    transform: translateY(100%);
+                    color: orangered;
+                    font-size: 0.6em;
+                    font-style: italic;
+                }
+            }
+            .btn {
+                height: 64px;
+                width: 168px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .shortener {
+        margin-top: 0;
+        .container {
+            padding: 24px;
+            background-image: url("../images/bg-shorten-mobile.svg");
+            form {
+                display: grid;
+                grid-template-columns: none;
+                grid-template-rows: repeat(2, 1fr);
+                gap: 16px;
+                span {
+                    input {
+                        height: 48px;
+                        padding: 24px 15px;
+                    }
+                }
+                .btn {
+                    height: 48px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

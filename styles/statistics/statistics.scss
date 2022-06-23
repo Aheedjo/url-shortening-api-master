@@ -1,0 +1,97 @@
+@import "../variables/vaariables.scss";
+.statistics {
+    background-color: #F0F1F6;
+    padding: 130px 0 125px 0;
+    .container {
+        header {
+            text-align: center;
+            p {
+                max-width: 520px;
+                margin: auto;
+                margin-top: 35px;
+            }
+        }
+        .statistics_container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 110px;
+            position: relative;
+            .line_bg {
+                background-color: $Cyan;
+                height: 8px;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: 145px;
+            }
+            .statistic {
+                background-color: #fff;
+                padding: 85px 30px 45px 30px;
+                position: relative;
+                height: fit-content;
+                border-radius: 5px;
+                p {
+                    font-size: 0.83em;
+                    margin-top: 22px;
+                }
+                #img {
+                    position: absolute;
+                    top: 0;
+                    background-color: $Very_Dark_Blue;
+                    padding: 24px;
+                    border-radius: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+            .statistic:nth-of-type(2) {
+                margin-top: 45px;
+            }
+            .statistic:nth-of-type(3) {
+                margin-top: 90px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .statistics {
+        padding: 100px 0 80px 0;
+        .container {
+            header {
+                p {
+                    max-width: 100%;
+                }
+            }
+            .statistics_container {
+                display: grid;
+                grid-template-columns: none;
+                grid-template-rows: repeat(3, 1fr);
+                gap: 100px;
+                margin-top: 100px;
+                .line_bg {
+                    background-color: $Cyan;
+                    height: 8px;
+                    width: 150%;
+                    left: -25%;
+                    top: 500px;
+                    transform: rotate(90deg);
+                }
+                .statistic {
+                    #img {
+                        position: absolute;
+                        top: -20%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+                .statistic:nth-of-type(2) {
+                    margin-top: 0px;
+                }
+                .statistic:nth-of-type(3) {
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+}

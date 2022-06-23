@@ -1,0 +1,108 @@
+.shortened_links {
+  background-color: #F0F1F6;
+}
+
+.shortened_links .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  padding-top: 25px;
+}
+
+.shortened_links .container .shortened {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 30px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.shortened_links .container .shortened p {
+  font-size: 1.2em;
+  color: #3b3054;
+}
+
+.shortened_links .container .shortened a {
+  color: #2acfcf;
+  font-size: 1.2em;
+  margin-right: 25px;
+  font-weight: 400;
+}
+
+.shortened_links .container .shortened .btn {
+  width: 103px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.shortened_links .container .shortened hr {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .shortened_links .container {
+    gap: 24px;
+  }
+  .shortened_links .container .shortened {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 35px;
+    padding: 17px 18px;
+    width: 100%;
+    position: relative;
+  }
+  .shortened_links .container .shortened p {
+    font-size: 0.89em;
+  }
+  .shortened_links .container .shortened div {
+    width: 100%;
+  }
+  .shortened_links .container .shortened div a {
+    font-size: 0.89em;
+    margin-right: 0px;
+  }
+  .shortened_links .container .shortened div .btn {
+    width: 100%;
+    margin-top: 17px;
+  }
+  .shortened_links .container .shortened hr {
+    display: block;
+    width: 100%;
+    border: none;
+    border-top: 1px solid #bfbfbf;
+    position: absolute;
+    left: 0px;
+    top: 55px;
+  }
+}
+/*# sourceMappingURL=shortened links.css.map */

@@ -1,0 +1,95 @@
+.shortener {
+  margin-top: 70px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #fff), color-stop(50%, #F0F1F6));
+  background: linear-gradient(#fff 50%, #F0F1F6 50%);
+}
+
+.shortener .container {
+  background-color: #232127;
+  padding: 52px 65px;
+  border-radius: 10px;
+  background-image: url("../images/bg-shorten-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.shortener .container form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80% 20%;
+      grid-template-columns: 80% 20%;
+  gap: 25px;
+}
+
+.shortener .container form > span {
+  position: relative;
+}
+
+.shortener .container form > span input {
+  padding: 24px 33px;
+  border-radius: 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.shortener .container form > span ::-webkit-input-placeholder {
+  color: #9e9aa7;
+}
+
+.shortener .container form > span :-ms-input-placeholder {
+  color: #9e9aa7;
+}
+
+.shortener .container form > span ::-ms-input-placeholder {
+  color: #9e9aa7;
+}
+
+.shortener .container form > span ::placeholder {
+  color: #9e9aa7;
+}
+
+.shortener .container form > span .error_message {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  color: orangered;
+  font-size: 0.6em;
+  font-style: italic;
+}
+
+.shortener .container form .btn {
+  height: 64px;
+  width: 168px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .shortener {
+    margin-top: 0;
+  }
+  .shortener .container {
+    padding: 24px;
+    background-image: url("../images/bg-shorten-mobile.svg");
+  }
+  .shortener .container form {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .shortener .container form span input {
+    height: 48px;
+    padding: 24px 15px;
+  }
+  .shortener .container form .btn {
+    height: 48px;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=shortener.css.map */

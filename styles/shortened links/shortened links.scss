@@ -1,0 +1,80 @@
+@import "../variables/vaariables.scss";
+@mixin flex {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.shortened_links {
+    background-color: #F0F1F6;
+    .container {
+        @include flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-top: 25px;
+        .shortened {
+            @include flex;
+            padding: 16px 30px;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 5px;
+            p {
+                font-size: 1.2em;
+                color: $Dark_Violet;
+            }
+            a {
+                color: $Cyan;
+                font-size: 1.2em;
+                margin-right: 25px;
+                font-weight: 400;
+            }
+            .btn {
+                width: 103px;
+                height: 40px;
+                border-radius: 5px;
+            }
+            hr {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 1000px) {
+    .shortened_links {
+        .container {
+            gap: 24px;
+            .shortened {
+                @include flex;
+                flex-direction: column;
+                gap: 35px;
+                padding: 17px 18px;
+                width: 100%;
+                position: relative;
+                p {
+                    font-size: 0.89em;
+                }
+                div {
+                    width: 100%;
+                    a {
+                        font-size: 0.89em;
+                        margin-right: 0px;
+                    }
+                    .btn {
+                        width: 100%;
+                        margin-top: 17px;
+                    }
+                }
+                hr {
+                    display: block;
+                    width: 100%;
+                    border: none;
+                    border-top: 1px solid $Gray;
+                    position: absolute;
+                    left: 0px;
+                    top: 55px;
+                }
+            }
+        }
+    }
+}

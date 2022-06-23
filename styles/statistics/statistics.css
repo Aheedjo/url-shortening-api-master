@@ -1,0 +1,108 @@
+.statistics {
+  background-color: #F0F1F6;
+  padding: 130px 0 125px 0;
+}
+
+.statistics .container header {
+  text-align: center;
+}
+
+.statistics .container header p {
+  max-width: 520px;
+  margin: auto;
+  margin-top: 35px;
+}
+
+.statistics .container .statistics_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 110px;
+  position: relative;
+}
+
+.statistics .container .statistics_container .line_bg {
+  background-color: #2acfcf;
+  height: 8px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 145px;
+}
+
+.statistics .container .statistics_container .statistic {
+  background-color: #fff;
+  padding: 85px 30px 45px 30px;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 5px;
+}
+
+.statistics .container .statistics_container .statistic p {
+  font-size: 0.83em;
+  margin-top: 22px;
+}
+
+.statistics .container .statistics_container .statistic #img {
+  position: absolute;
+  top: 0;
+  background-color: #35323e;
+  padding: 24px;
+  border-radius: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.statistics .container .statistics_container .statistic:nth-of-type(2) {
+  margin-top: 45px;
+}
+
+.statistics .container .statistics_container .statistic:nth-of-type(3) {
+  margin-top: 90px;
+}
+
+@media screen and (max-width: 768px) {
+  .statistics {
+    padding: 100px 0 80px 0;
+  }
+  .statistics .container header p {
+    max-width: 100%;
+  }
+  .statistics .container .statistics_container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    gap: 100px;
+    margin-top: 100px;
+  }
+  .statistics .container .statistics_container .line_bg {
+    background-color: #2acfcf;
+    height: 8px;
+    width: 150%;
+    left: -25%;
+    top: 500px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .statistics .container .statistics_container .statistic #img {
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .statistics .container .statistics_container .statistic:nth-of-type(2) {
+    margin-top: 0px;
+  }
+  .statistics .container .statistics_container .statistic:nth-of-type(3) {
+    margin-top: 0px;
+  }
+}
+/*# sourceMappingURL=statistics.css.map */

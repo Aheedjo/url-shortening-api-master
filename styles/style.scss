@@ -1,0 +1,84 @@
+@import "./variables/vaariables.scss";
+@import "./nav/nav.scss";
+@import "./hero/hero.scss";
+@import "./shortener/shortener.scss";
+@import "./shortened links/shortened links.scss";
+@import "./statistics/statistics.scss";
+@import "./cta/cta.scss";
+@import "./footer/footer.scss";
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $Font_family;
+    font-size: $Font_size;
+    overflow-x: hidden;
+}
+
+a {
+    font-size: 0.83em;
+    font-weight: 600;
+    text-decoration: none;
+    color: $Grayish_Violet;
+}
+
+li {
+    list-style: none;
+    display: inline;
+}
+
+.container {
+    max-width: 1110px;
+    width: 90%;
+    margin: auto;
+}
+
+.btn {
+    width: 105px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: $Cyan;
+    border: transparent;
+    outline: none;
+    color: #fff;
+    font-weight: 700;
+    font-family: inherit;
+}
+
+h1,
+h2,
+h3 {
+    color: $Very_Dark_Blue;
+}
+
+p,
+a {
+    color: $Grayish_Violet;
+}
+
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 4.27em;
+    }
+    h2 {
+        font-size: 2.17em;
+    }
+    h3 {
+        font-size: 1.22em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.22em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 1.22em;
+    }
+}

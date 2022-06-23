@@ -1,0 +1,38 @@
+.cta {
+  background-color: #35323e;
+  background-image: url("../images/bg-boost-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cta .container {
+  padding: 60px 0;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.cta .container h2 {
+  color: #fff;
+  font-size: 39px;
+}
+
+.cta .container .btn {
+  width: 200px;
+  height: 56px;
+  font-size: 1.2em;
+  margin-top: 27px;
+}
+
+@media screen and (max-width: 768px) {
+  .cta {
+    background-image: url("../images/bg-boost-mobile.svg");
+  }
+  .cta .container {
+    padding: 90px 0;
+  }
+  .cta .container h2 {
+    font-size: 27px;
+  }
+}
+/*# sourceMappingURL=cta.css.map */
