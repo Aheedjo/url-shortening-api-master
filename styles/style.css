@@ -766,6 +766,11 @@ li {
   color: #fff;
   font-weight: 700;
   font-family: inherit;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
 }
 
 h1,
