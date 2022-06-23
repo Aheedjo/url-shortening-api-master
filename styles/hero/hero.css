@@ -42,7 +42,20 @@
   right: -250px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
+  .hero .container .text {
+    margin: 100px 0;
+  }
+  .hero .container .text h1 {
+    font-size: 65px;
+  }
+  .hero .container img {
+    position: absolute;
+    right: -250px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
   .hero .container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;

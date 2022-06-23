@@ -30,7 +30,22 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
+    .hero .container {
+        .text {
+            margin: 100px 0;
+            h1 {
+                font-size: 65px;
+            }
+        }
+        img {
+            position: absolute;
+            right: -250px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
     .hero .container {
         grid-template-columns: 1fr;
         .text {
